@@ -1,0 +1,161 @@
+body {
+    margin: 0px;
+}
+
+/* The navigation bar */
+
+.navbar {
+    height: 100px;
+}
+
+nav {
+    top: 20px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid lightslategray;
+    border-top: 1px solid lightslategray;
+    width: 100%;
+}
+
+.left-column {
+    top: 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.brand {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#name {
+    font-family: 'Montserrat', sans-serif;
+    top: 10px;
+    position: absolute;
+    font-family: cursive;
+    font-size: x-large;
+    padding: 5px;
+    box-shadow: -4px 5px 5px #888888, 4px 5px 5px #888888;
+    width: 200px;
+    padding: 20px;
+    background-color: black;
+    color: darkcyan;
+    z-index: 1;
+    cursor: grab;
+}
+
+#name:hover {
+    color: cyan;
+}
+
+a {
+    padding: 11px 30px;
+    text-decoration: none;
+    color: #8a8a8a;
+    transition: color 0.5s;
+    transition: background 0.5s;
+    z-index: 2;
+}
+
+a:hover {
+    color: aquamarine;
+    background-color: #9C9898;
+}
+
+.logo {
+    cursor: pointer;
+    padding: 5px 15px 0px 10px;
+    width: 40px;
+    height: 40px;
+}
+
+/* The images */
+
+.items-wrapper {
+    margin: 0px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.item-wrapper {
+    margin: 20px;
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
+    width: 350px;
+    height: 300px;
+    display: flex;
+    align-content: space-between;
+}
+
+.contnents {    
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    }
+
+.logo-wrapper {
+    opacity: 0%;
+    transition: opacity 1s;
+}
+
+.text-wrapper {
+    padding: 20px;
+    font-weight: 600;
+    opacity: 0%;
+    transition: color 1s;
+    transition: background-color 1s;
+}
+
+.item-wrapper:hover .text-wrapper {
+    color: cyan;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 100%;
+}
+
+
+.item-wrapper:hover .logo-wrapper {
+    color: lightseagreen;
+    opacity: 100%;
+}
+
+.footer {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    bottom: 0px;
+    color: darkcyan;
+}
+
+.pp {
+    display: flex;
+    padding: 50px;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.pp img {
+    margin-bottom: 20px;
+    border: 2px solid black;
+    float: right;
+}
+
+.pp .intro {   
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    color: lightseagreen;
+    line-height: 3em;
+    margin: 10px;
+    font-size: 2em;
+}
